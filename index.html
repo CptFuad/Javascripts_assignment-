@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .product {
+      margin-bottom: 10px;
+    }
+    .cart {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="product-list">
+  <div class="product">
+    <span>Product 1 - $10</span>
+    <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+  </div>
+  <div class="product">
+    <span>Product 2 - $15</span>
+    <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+  </div>
+  <div class="product">
+    <span>Product 3 - $20</span>
+    <button onclick="addToCart('Product 3', 20)">Add to Cart</button>
+  </div>
+  <div class="product">
+    <span>Product 4 - $25</span>
+    <button onclick="addToCart('Product 4', 25)">Add to Cart</button>
+  </div>
+</div>
+
+<div id="cart" class="cart">
+  <h2>Cart</h2>
+  <ul id="cart-items"></ul>
+</div>
+
+<script src="script.js"> </script>
+
+</body>
+</html>
